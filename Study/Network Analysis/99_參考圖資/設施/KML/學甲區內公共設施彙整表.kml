@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>學甲區內公共設施彙整表.csv</name>
+	<open>1</open>
+	<Schema name="%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8" id="S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+		<SimpleField type="string" name="名稱"><displayName>&lt;b&gt;名稱&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="分類"><displayName>&lt;b&gt;分類&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="地址"><displayName>&lt;b&gt;地址&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="X"><displayName>&lt;b&gt;X&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="double" name="Y"><displayName>&lt;b&gt;Y&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="int" name="unnamed"><displayName>&lt;b&gt;&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>名稱</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/名稱]</td></tr>
+  <tr><td><b>分類</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/分類]</td></tr>
+  <tr><td><b>地址</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/地址]</td></tr>
+  <tr><td><b>X</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/X]</td></tr>
+  <tr><td><b>Y</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/Y]</td></tr>
+  <tr><td><b></b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/unnamed]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>名稱</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/名稱]</td></tr>
+  <tr><td><b>分類</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/分類]</td></tr>
+  <tr><td><b>地址</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/地址]</td></tr>
+  <tr><td><b>X</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/X]</td></tr>
+  <tr><td><b>Y</b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/Y]</td></tr>
+  <tr><td><b></b></td><td>$[%E5%AD%B8%E7%94%B2%E5%8D%80%E5%85%A7%E5%85%AC%E5%85%B1%E8%A8%AD%E6%96%BD%E5%BD%99%E6%95%B4%E8%A1%A8/unnamed]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder id="layer 0">
+		<name>學甲區內公共設施彙整表</name>
+		<open>1</open>
+		<Placemark>
+			<name>學甲派出所</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">學甲派出所</SimpleData>
+					<SimpleData name="分類">警察派出所</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區華宗路294號</SimpleData>
+					<SimpleData name="X">166381</SimpleData>
+					<SimpleData name="Y">2.57e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1828675,23.2300161,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>中浯派出所</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">中浯派出所</SimpleData>
+					<SimpleData name="分類">警察派出所</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區中洲里中洲287號</SimpleData>
+					<SimpleData name="X">163675</SimpleData>
+					<SimpleData name="Y">2.57163e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1564186,23.24469190000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>宅港派出所</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">宅港派出所</SimpleData>
+					<SimpleData name="分類">警察派出所</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區宅港里宅子港52號</SimpleData>
+					<SimpleData name="X">160893</SimpleData>
+					<SimpleData name="Y">2.57129e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.2033212,23.25848600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>頂洲派出所</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">頂洲派出所</SimpleData>
+					<SimpleData name="分類">警察派出所</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區三慶里頂洲110之1號</SimpleData>
+					<SimpleData name="X">168346</SimpleData>
+					<SimpleData name="Y">2.57635e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.2018228,23.28756139999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>學甲郵局</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">學甲郵局</SimpleData>
+					<SimpleData name="分類">郵政分局</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區中正路318號</SimpleData>
+					<SimpleData name="X">166178</SimpleData>
+					<SimpleData name="Y">2.57054e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.180887,23.23503900000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市學甲區東陽國民小學附設幼兒園</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市學甲區東陽國民小學附設幼兒園</SimpleData>
+					<SimpleData name="分類">幼兒園</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區華宗路260號</SimpleData>
+					<SimpleData name="X">166436</SimpleData>
+					<SimpleData name="Y">2.56979e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1838484,23.22875,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市立學甲幼兒園</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市立學甲幼兒園</SimpleData>
+					<SimpleData name="分類">幼兒園</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區下溪洲1-11號</SimpleData>
+					<SimpleData name="X">165455</SimpleData>
+					<SimpleData name="Y">2.57081e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.173857,23.23738789999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市學甲區學甲國民小學附設幼兒園</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市學甲區學甲國民小學附設幼兒園</SimpleData>
+					<SimpleData name="分類">幼兒園</SimpleData>
+					<SimpleData name="地址">726臺南市學甲區一秀30號</SimpleData>
+					<SimpleData name="X">165520</SimpleData>
+					<SimpleData name="Y">2.57089e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.175293,23.2363663,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市私立諾貝爾幼兒園</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市私立諾貝爾幼兒園</SimpleData>
+					<SimpleData name="分類">幼兒園</SimpleData>
+					<SimpleData name="地址">726台南市學甲區中華路三段</SimpleData>
+					<SimpleData name="X">166877</SimpleData>
+					<SimpleData name="Y">2.57041e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1883244,23.23009469999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市私立法源幼兒園</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市私立法源幼兒園</SimpleData>
+					<SimpleData name="分類">幼兒園</SimpleData>
+					<SimpleData name="地址">726台南市學甲區法源路27號</SimpleData>
+					<SimpleData name="X">166461</SimpleData>
+					<SimpleData name="Y">2.57063e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1840352,23.2362349,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市慈母非營利幼兒園(財團法人臺南市私立天主教伯利恆社會福利基金會申請辦理)</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市慈母非營利幼兒園(財團法人臺南市私立天主教伯利恆社會福利基金會申請辦理)</SimpleData>
+					<SimpleData name="分類">幼兒園</SimpleData>
+					<SimpleData name="地址">726台南市學甲區華宗路517號</SimpleData>
+					<SimpleData name="X">166346</SimpleData>
+					<SimpleData name="Y">2.57069e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.182721,23.2364557,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區第五社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區第五社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區中洲里313-2號</SimpleData>
+					<SimpleData name="X">163751</SimpleData>
+					<SimpleData name="Y">2.57166e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1502699,23.24621079999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市學甲區宜民社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市學甲區宜民社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">臺南市學甲區信義路72號</SimpleData>
+					<SimpleData name="X">165929</SimpleData>
+					<SimpleData name="Y">2.57059e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1784582,23.23547449999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區平西社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區平西社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">726台南市學甲區南70鄉道20號</SimpleData>
+					<SimpleData name="X">169730</SimpleData>
+					<SimpleData name="Y">2.57329e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.2131916,23.26105739999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區百福社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區百福社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區百福里太平路13號</SimpleData>
+					<SimpleData name="X">166562</SimpleData>
+					<SimpleData name="Y">2.57037e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1844346,23.23345120000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區新芳社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區新芳社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區三慶里29鄰新芳54-2號</SimpleData>
+					<SimpleData name="X">167310</SimpleData>
+					<SimpleData name="Y">2.57513e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1911989,23.27662029999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>臺南市學甲區紅茄萣社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">臺南市學甲區紅茄萣社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">臺南市學甲區三慶里紅茄105號</SimpleData>
+					<SimpleData name="X">167443</SimpleData>
+					<SimpleData name="Y">2.57561e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1932745,23.27969790000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區仁得社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區仁得社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區仁得里自強路19號</SimpleData>
+					<SimpleData name="X">166282</SimpleData>
+					<SimpleData name="Y">2.56982e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1819352,23.22851010000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區達明社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區達明社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區新達里山寮26號</SimpleData>
+					<SimpleData name="X">167842</SimpleData>
+					<SimpleData name="Y">2.57053e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.197611,23.23626700000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區新生社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區新生社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區新興路21號</SimpleData>
+					<SimpleData name="X">166728</SimpleData>
+					<SimpleData name="Y">2.57057e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.186663,23.2352495,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區美豐社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區美豐社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區豐和里10鄰美豐82-5號</SimpleData>
+					<SimpleData name="X">168029</SimpleData>
+					<SimpleData name="Y">2.56853e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1993381,23.22244240000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區平東社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區平東社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區平和里7鄰學甲寮62之2號</SimpleData>
+					<SimpleData name="X">169722</SimpleData>
+					<SimpleData name="Y">2.57333e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.2153432,23.26060530000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區頂洲社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區頂洲社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區三慶里頂洲104號</SimpleData>
+					<SimpleData name="X">168380</SimpleData>
+					<SimpleData name="Y">2.57627e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.201035,23.28973300000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區西明社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區西明社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區信義路54號</SimpleData>
+					<SimpleData name="X">165895</SimpleData>
+					<SimpleData name="Y">2.57043e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1781693,23.23403570000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區大灣社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區大灣社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區大灣里101號</SimpleData>
+					<SimpleData name="X">166779</SimpleData>
+					<SimpleData name="Y">2.56779e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1874136,23.21016960000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區光華社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區光華社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區光華里8鄰過港子65號</SimpleData>
+					<SimpleData name="X">164682</SimpleData>
+					<SimpleData name="Y">2.57149e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1658299,23.24334379999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區一秀社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區一秀社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區一秀里6鄰一秀63號</SimpleData>
+					<SimpleData name="X">165770</SimpleData>
+					<SimpleData name="Y">2.57093e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.174002,23.25074600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>台南市學甲區新榮社區發展協會</name>
+			<styleUrl>#pointStyleMap</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffe7ebef</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S__E5_AD_B8_E7_94_B2_E5_8D_80_E5_85_A7_E5_85_AC_E5_85_B1_E8_A8_AD_E6_96_BD_E5_BD_99_E6_95_B4_E8_A1_A8_SSSDDI">
+					<SimpleData name="名稱">台南市學甲區新榮社區發展協會</SimpleData>
+					<SimpleData name="分類">民眾活動中心</SimpleData>
+					<SimpleData name="地址">台南市學甲區新榮里東寮63號</SimpleData>
+					<SimpleData name="X">166647</SimpleData>
+					<SimpleData name="Y">2.56953e+06</SimpleData>
+					<SimpleData name="unnamed">0</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>120.1853338,23.22569140000001,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
